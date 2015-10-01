@@ -1,0 +1,100 @@
+@import "normalize";
+
+$main-color: #2185d0;
+
+* {
+  outline: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #353535;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 2px solid #ccc;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border-radius: 5px;
+
+  &:focus {
+    border-color: $main-color;
+  }
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.login-container {
+  padding: 40px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.button {
+  width: 100%;
+  display: block;
+  padding: 0 15px;
+  line-height: 36px;
+  height: 36px;
+  font-weight: 700;
+  font-size: .9rem;
+  background-color: $main-color;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+
+  &[disabled] {
+    cursor: wait;
+    background-color: #ccc;
+  }
+}
+
+#app {
+
+}
+
+.logo {
+  background: {
+    image: url(../images/main/minecraft.png);
+    color: transparent;
+    position: 50% 50%;
+    repeat: no-repeat;
+    size: cover;
+  }
+  width: 128px;
+  height: 128px;
+  text-indent: -9999px;
+  margin: 0 auto 20px;
+}
+
+.errors {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+
+  li {
+    font-weight: 700;
+    font-size: .9rem;
+    color: #a00;
+  }
+}
